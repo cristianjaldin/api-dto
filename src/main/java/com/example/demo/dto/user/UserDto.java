@@ -2,7 +2,7 @@ package com.example.demo.dto.user;
 
 import java.util.List;
 
-public class UserGetDto {
+public class UserDto {
 	
 	private String id;
 	private String username;
@@ -40,4 +40,11 @@ public class UserGetDto {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+	
+	@Override
+	public String toString() {
+		return "UserGetDto [id=" + id + ", username=" + username + ", roles=" + roles + ", name=" + name + ", surname="
+				+ surname + "]";
+	}
+
 }
